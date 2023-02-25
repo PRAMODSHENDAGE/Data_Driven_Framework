@@ -1,4 +1,4 @@
-package com.fb.qa.util;
+package com.fb.qa.base;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,7 +16,7 @@ public class Excel_Data_Config {
 	public Excel_Data_Config(String excelPath) {
 		
 		try {
-			File file = new File("C:\\Users\\Admin\\Desktop/UserData.xlsx");
+			File file = new File(excelPath);
 			FileInputStream fis = new FileInputStream(file);
 			workbook = new XSSFWorkbook(fis);
 		} catch (Exception e) {
@@ -36,3 +36,4 @@ public class Excel_Data_Config {
 		return row;
 	}
 }
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.Extent_ReporterNG">
+		</listener>
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.fb.qa.util.Facebook_Sign_In_With_Excel"/>
+      <class name="com.fb.qa.util.Read_Excel"/>
+      <class name="com.fb.qa.util.Read_Excel_Data"/>
+      <class name="com.fb.qa.util.Facebook_Sign_In"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

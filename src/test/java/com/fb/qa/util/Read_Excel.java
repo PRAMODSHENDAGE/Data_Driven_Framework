@@ -6,10 +6,12 @@ import java.io.FileNotFoundException;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
 
 public class Read_Excel {
 	
-	public static void main(String[]args) throws Exception{
+	@Test
+	public void read_Excel() throws Exception{
 		
 		File file = new File("C:\\Users\\Admin\\Desktop/UserData.xlsx");
 		FileInputStream fis = new FileInputStream(file);

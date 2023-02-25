@@ -6,7 +6,7 @@
       <class name="com.fb.qa.util.Facebook_Sign_In_With_Excel">
         <methods>
           <include name="tearDown"/>
-          <include name="sign_In" invocation-numbers="0"/>
+          <include name="sign_In"/>
         </methods>
       </class> <!-- com.fb.qa.util.Facebook_Sign_In_With_Excel -->
     </classes>
